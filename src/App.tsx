@@ -1,4 +1,3 @@
-
 import './index.css'
 
     type Character = {
@@ -1150,14 +1149,20 @@ import './index.css'
             }
         ]
         return(
-            <div className={"container"}>
-                {characters.map(char =>
-                    <div className={"item"} key={char.id}>
-                        <h1>{char.name}</h1>
-                        <img src={char.image} alt={"rickandmorty"}></img>
-                        <h2>{char.origin.name}</h2>
-                    </div>
-                )}
+            <div>
+                <div className={"header"}>
+                    <img className={"imgRuM"} src="https://rickandmortyapi.com/api/character/avatar/19.jpeg" alt={"headerLogo"}/>
+                    <h1 className={"uberschriftRuM"}>Rick & Morty App</h1>
+                </div>
+                <div className={"container"}>
+                    {characters.map(char =>
+                        <div className={"item"} key={char.id}>
+                            <h1>{char.name}</h1>
+                            <img src={char.image} alt={"rickandmorty"}></img>
+                            <h2>{char.origin.name}</h2>
+                        </div>
+                    )}
+                </div>
             </div>
         );
     }
