@@ -1095,6 +1095,7 @@ function CharacterCard(props: CharacterCardProps) {
     )
 }
 
+
 function App() {
     return (
         <>
